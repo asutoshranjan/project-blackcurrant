@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Container from "./Container";
+import icon from "../images/icon-white.png";
 
 export default function AppHeader() {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -30,8 +31,10 @@ export default function AppHeader() {
                   className="flex space-x-2 items-center"
                 >
                   <div aria-hidden="true" className="flex space-x-1">
-                    <div className="h-4 w-4 rounded-full bg-white"></div>
-                    <div className="h-6 w-2 bg-primary"></div>
+                    <div className="h-6 w-6 mr-0.5">
+                      <img src={icon} alt="logo"/>
+                    </div>
+                    <div className="h-6 w-1.5 bg-primary"></div>
                   </div>
                   <span className="text-2xl font-bold text-white">Asutosh</span>
                 </a>
