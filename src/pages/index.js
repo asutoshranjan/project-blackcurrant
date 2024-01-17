@@ -10,6 +10,7 @@ import About from "../components/MyAbout";
 import More from "../components/MyBottomSection";
 import icon from "../images/icon.png";
 import TechStack from "../components/MyTechStack";
+import { SEO } from "../components/Seo";
 
 export default function Index() {
   return (
@@ -30,8 +31,7 @@ export default function Index() {
 }
 
 export const Head = () => (
-  <>
-    <link rel="icon" type="image/png" href={icon} />{" "}
-    <title>Asutosh Ranjan</title>
-  </>
+  <SEO title={"Asutosh Ranjan"} logo={icon}>
+    <link rel="icon" type="image/png" href={icon} />
+  </SEO>
 );
