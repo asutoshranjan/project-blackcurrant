@@ -42,6 +42,7 @@ export default function HeroSection() {
                 <TextLoop />
               </div>
             </DelayReveal>
+            <DelayReveal delay={1.52}>
             <p
               className="mt-20 text-gray-200/90 font-atkinsonHyperlegible"
               style={{ fontSize: "1.12rem", lineHeight: "1.606rem" }}
@@ -51,6 +52,8 @@ export default function HeroSection() {
               Passionate for crafting unique user experiences, I build solutions
               that align perfectly with your product vision.{" "}
             </p>
+            </DelayReveal>
+            <DelayReveal delay={1.82}>
             <div className="mt-12 flex flex-wrap justify-center gap-y-4 gap-x-6">
               <a
                 href="#about"
@@ -70,6 +73,7 @@ export default function HeroSection() {
                 </span>
               </a>
             </div>
+            </DelayReveal>
           </div>
         </div>
       </Container>
