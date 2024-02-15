@@ -10,7 +10,8 @@ import About from "../components/MyAbout";
 import More from "../components/MyBottomSection";
 import icon from "../images/icon.png";
 import TechStack from "../components/MyTechStack";
-import MyLogo from "../images/icon.png";
+import { SEO } from "../components/seo"
+
 
 export default function Index() {
   return (
@@ -31,17 +32,7 @@ export default function Index() {
 }
 
 export const Head = () => (
-  // <SEO title={"Asutosh Ranjan"} logo={icon}>
-  //   <link rel="icon" type="image/png" href={icon} />
-  // </SEO>
-  <>
+  <SEO title={"Asutosh Ranjan"} >
     <link rel="icon" type="image/png" href={icon} />
-    <title>Asutosh Ranjan</title>
-    <meta
-      name="description"
-      content="I'm a full-stack web and mobile app developer specializing in building stunning, responsive, and performant applications. Passionate for crafting unique user experiences, I build solutions that align perfectly with your product vision"
-    />
-    <meta name="image" content={`${"https://asutoshranjan.tech"}${MyLogo}`} />
-    <meta name="twitter:creator" content="@asutoshranjan22" />
-  </>
+  </SEO>
 );
