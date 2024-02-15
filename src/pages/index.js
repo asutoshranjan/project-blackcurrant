@@ -10,7 +10,7 @@ import About from "../components/MyAbout";
 import More from "../components/MyBottomSection";
 import icon from "../images/icon.png";
 import TechStack from "../components/MyTechStack";
-import Mydp from "../images/Asutosh_DP1.png";
+import MyLogo from "../images/icon.png";
 
 export default function Index() {
   return (
@@ -39,12 +39,9 @@ export const Head = () => (
     <title>Asutosh Ranjan</title>
     <meta
       name="description"
-      content="I'm a full-stack web and mobile app developer specializing in
-    building stunning, responsive, and performant applications.
-    Passionate for crafting unique user experiences, I build solutions
-    that align perfectly with your product vision"
+      content="I'm a full-stack web and mobile app developer specializing in building stunning, responsive, and performant applications. Passionate for crafting unique user experiences, I build solutions that align perfectly with your product vision"
     />
-    <meta name="image" content={Mydp} />
+    <meta name="image" content={`${"https://asutoshranjan.tech"}${MyLogo}`} />
     <meta name="twitter:creator" content="@asutoshranjan22" />
   </>
 );
